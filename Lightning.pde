@@ -19,7 +19,6 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
-	System.out.println((int)(Math.random()*19-9));
 }
 void mousePressed()
 {
