@@ -22,11 +22,9 @@ public void setup()
 {
   size(300,300);
   strokeWeight(4);
-  background(0);
 }
 public void draw()
 {
-	stroke((int)(Math.random()*128+127));
 	while(endX<301)
 	{
 		endX = startX + (int)(Math.random()*10);
@@ -35,15 +33,18 @@ public void draw()
 		startX = endX;
 		startY = endY;
 	}
-	System.out.println((int)(Math.random()*19-9));
 }
 public void mousePressed()
 {
+	int c1 = (int)(Math.random()*256);
+	int c2 = (int)(Math.random()*256);
+	int c3 = (int)(Math.random()*256);
 	startX = 0;
 	startY = 150;
 	endX = 0;
 	endY = 150;
-	background(0);
+	background(c1,c2,c3);
+	stroke(c3,c1,c2);
 }
 
   static public void main(String[] passedArgs) {
